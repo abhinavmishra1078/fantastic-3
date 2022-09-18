@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantastic 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/18b58c4f69.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <img src="images/fant3.png" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="listing.html">Travel Inside</a></li> -->
+                <li><a href="house.html">About Us</a></li>
+
+            </ul>
+            <a href="index2.html" class="register-btn">Sign in</a>
+            <a href="rich_text_editor.html" class="register-btn2">+ Add Content</a>
+            <i class="fas fa-bars" onclick="togglebtn()"></i>
+
+        </nav>
+        <div class="container">
+            <h1>Let's unbox your mind</h1>
+            <p>We welcome your suggestions</p>
+        </div>
+        <div class="search-bar">
+            <form>
+                <div class="location-input">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="Enter your name">
+                </div>
+                <div>
+                    <label>Age</label>
+                    <input type="text" placeholder="Enter your age">
+                </div>
+                <div>
+                    <label>Topic</label>
+                    <input type="text" placeholder="Enter your topic">
+                </div>
+                <div>
+                    <label>Date</label>
+                    <input type="text" placeholder="By which date you want">
+                </div>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="conatiner">
+        <h2 class="sub-title">Exclusives by our users</h2>
+        <div class="exclusives">
+            <div>
+                <img src="images/image-1.png">
+                <span>
+                    <a href="blogtravel.html"><h3>Travel</h3></a>
+                    <p></p>
+                </span>
+            </div>
+
+            <div>
+                <img src="images/ic.jpg">
+                <span>
+                    <a href="indianculture.html"><h3>Indian culture at its par</h3></a>
+                    <p></p>
+                </span>
+            </div>
+            <div>
+                <img src="images/pregnant2.jpg">
+                <span>
+                    <a href="pregnancytip.html"><h3>Preganacy tips & care</h3></a>
+                    <p></p>
+                </span>
+            </div>
+            <div>
+                <img src="images/photography.jpg">
+                <span>
+                    <a href="photogrphy.html"><h3>Camera & Lenses</h3></a>
+                    <p></p>
+                </span>
+            </div>
+            <div>
+                <img src="images/music.jpg">
+                <span>
+                    <a href="music.html"><h3>Music is best healer</h3></a>
+                    <p></p>
+                </span>
+            </div>
+            <div>
+                <img src="images/education.jpg">
+                <span>
+                    <a href="education.html"><h3>Eduction leads to success</h3></a>
+                    <p></p>
+                </span>
+            </div>
+            <div>
+                <img src="images/ws.jpg">
+                <span>
+                    <a href="womensafety.html"><h3>Women's Safety</h3></a>
+                    <p></p>
+                </span>
+            </div>
+            <div>
+                <img src="images/neerajchopra.jpg">
+                <span>
+                    <a href="sports.html"><h3>sports star of era</h3></a>
+                    <p></p>
+                </span>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="gallery">
+            <div class="gallery-img-1"><img src="images/techno.jpg"><span> <a href="technology.html">INDIA:Emerging Startup hub of the world</a> 
+            </span>
+            </div>
+            <div1><img src="images/jquery.jpg"><span><a href="education.html">Education is the key to success</a></span></div1>
+            <div3><img src="images/whitehouse.jpg"><span><a href="whitehouse.html">America & its nucear history</a></span></div3>
+            <div2><img src="images/putin.jpg"><span><a href="russiavsukraine.html">Russia VS Ukrain</a></span></div2>
+            <div2><img src="images/kohli-and-rohit.jpg"><span><a href="sports.html">Sport Stars</a></span></div2>
+            <div2><img src="images/rafale.jpg">
+                <span><a href="rafale.html">Rafale deal of India with France</a></span></div2>
+        </div>
+
+
+
+
+
+        <div class="cta">
+            <h3>Sharing <br>is Caring</h3>
+            <p>Great oppourtunity to <br> share your experience with us</p>
+            <a href="#" class="cta-btn">Know More</a>
+        </div>
+
+
+
+
+    </div>
+    <a href="#" class="start-btn">Start making your journey as blogger</a>
+
+    <div class="footer">
+        <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+        <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+        <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+        <hr>
+        <p>Copyright &copy; Fantastic 3 ! All right reserved.</p>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <!-- ---------Javascript--------------->
+
+    <script>
+        var navbar = document.getElementById("navbar");
+
+        function togglebtn() {
+            navbar.classList.toggle("hidemenu");
+        }
+
+
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+</body>
+
+</html>

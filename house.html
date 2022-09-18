@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Details page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/18b58c4f69.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+        
+        body h1 {
+            font-size: 60px;
+            font-weight: 600;
+        }
+        
+        html {
+            box-sizing: border-box;
+        }
+        
+        *,
+        *:before,
+        *:after {
+            box-sizing: inherit;
+        }
+        
+        .column {
+            float: left;
+            width: 30%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+        }
+        
+        .column2 {
+            /* float: left;  */
+            display: flex;
+            width: 39%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+            height: 100%;
+        }
+        
+        .card2 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            margin: 8px;
+            height: 100%;
+        }
+        
+        .card2 img {
+            height: 10%;
+        }
+        
+        .about-section {
+            padding: 50px;
+            text-align: center;
+            background-color: #474e5d;
+            color: white;
+        }
+        
+        .about-section p {
+            font-size: 21px;
+            font-weight: 500;
+        }
+        
+        .container {
+            padding: 0 16px;
+        }
+        
+        .container::after,
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        .title {
+            color: grey;
+        }
+        
+        .button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        .button:hover {
+            background-color: #555;
+        }
+        
+        @media screen and (max-width: 650px) {
+            .column {
+                width: 100%;
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar-white">
+        <img src="images/fant3.png" class="logo">
+        <ul class="nav-links">
+            <li><a href="index.html">House</a></li>
+
+            <li><a href="house.html">About Us </a></li>
+
+        </ul>
+        <a href="index2.html" class="register-btn">Sign in</a>
+        <a href="rich_text_editor.html" class="register-btn2">+ Add Content</a>
+        <i class="fas fa-bars" onclick="togglebtn()"></i>
+
+    </nav>
+
+
+
+    <div class="about-section">
+        <h1>Fantastic 3</h1>
+        <p>Hii, we are here to help you out</p>
+        <p>Join the largest bloggers community in the asia</p>
+    </div>
+
+    <h2 style="text-align:center;font-size: 34px;">Our Team</h2>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="images/mine-modi-3.png" style="width:100%">
+                <div class="container">
+                    <h2>Abhinav Kumar Mishra</h2>
+                    <p class="title">Web Developer</p>
+                    <p>Abhinav Kumar Mishra is a full stack web developer and done more than 15+ project regarding it.</p>
+                    <p>abhinavmishra10051@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <img src="images/amit.jpeg" style="width:100%; height: 20%;">
+                <div class="container">
+                    <h2>Amit Ranjan Maurya</h2>
+                    <p class="title">Backend developer and app developer</p>
+                    <p>Amit Ranjan Maurya is backend and app developer done more than 10+ project regarding it.</p>
+                    <p>amitranjanmaurya10@gmail.com</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="column2">
+            <div class="card2">
+                <img src="images/projjwal.jpeg" style="width:100% ; ">
+                <div class="container">
+                    <h2>Projjwal Biswas</h2>
+                    <p class="title">Android Developer , PPT Developer</p>
+                    <p>Projjwal Biswas is a android app developer and done more than 7+ project regarding it. He is also having a great knowledge regarding java and kottlin. </p>
+                    <p>projjwalbiswas8@gmail.com</p>
+
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map">
+        <h3>Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1663940.0367862147!2d75.5363616742483!3d30.3472367628677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a837462345a7d%3A0x681102348ec60610!2sLudhiana%2C%20Punjab!5e0!3m2!1sen!2sin!4v1663398076686!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+        <div class="footer">
+            <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://youtube.com/"><i class="fab fa-youtube"></i></a>
+            <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            <hr>
+            <p>Copyright &copy; Fantastic 3 ! All right reserved.</p>
+        </div>
+    </div>
+
+
+    <!-----------Javascript----------------->
+    <script>
+        var navbar = document.getElementById("navbar");
+
+        function togglebtn() {
+            navbar.classList.toggle("hidemenu");
+        }
+    </script>
+
+
+</body>
+
+</html>
